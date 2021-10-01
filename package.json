@@ -1,0 +1,26 @@
+{
+  "name": "sales-table",
+  "version": "1.0.0",
+  "description": "simple api for sales",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niiwade/Sales-APi.git"
+  },
+  "keywords": [
+    "sales",
+    "api"
+  ],
+  "author": "niiwade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niiwade/Sales-APi/issues"
+  },
+  "homepage": "https://github.com/niiwade/Sales-APi#readme",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}
