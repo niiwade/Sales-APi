@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/niiwade/Sales-APi#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "pg": "^8.7.1"
   }
 }
