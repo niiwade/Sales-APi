@@ -32,9 +32,13 @@ const addSale = (req, res) => {
 }
 
 const dailySale = (req, res) => {
+    pool.query(queries.dailySale, (error, results) => {
+        if (error) throw error;
+        res.status(200).json(results.rows)
     
+    })
 }
 
 module.exports = {
-    getSale,getSalebyId,addSale, 
+    getSale,getSalebyId,addSale, dailySale,
 }
