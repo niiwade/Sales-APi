@@ -5,7 +5,7 @@ const router = Router();
 
 router.get("/", controller.getSale)
 router.post("/", controller.addSale) 
-router.post("/dailysale", controller.dailySale)
+router.get("/dailysale", controller.dailySale)
 router.get("/:id", controller.getSalebyId)
 
 

@@ -8,6 +8,14 @@ const getSale = (req, res) => {
     });
 }
 
+const dailySale = (req, res) => {
+    pool.query(queries.dailySale, (error, results) => {
+        if (error) throw error;
+        res.status(200).json(results.rows)
+    
+    })
+}
+
 const getSalebyId = (req, res) => {
     const id = parseInt(req.params.id);
     pool.query(queries.getSalebyId, [id],(error, results) => {
@@ -31,13 +39,6 @@ const addSale = (req, res) => {
     })
 }
 
-const dailySale = (req, res) => {
-    pool.query(queries.dailySale, (error, results) => {
-        if (error) throw error;
-        res.status(200).json(results.rows)
-    
-    })
-}
 
 module.exports = {
     getSale,getSalebyId,addSale, dailySale,
